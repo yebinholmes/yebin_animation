@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+.minions {
+    margin: auto;
+    margin-top: 50px;
+    width: 380px;
+    height: 550px;
+}
+
+.minions:hover{
+    background: url(./img/minions.png) no-repeat 0 0 / auto 100%;
+    animation: move-licat 0.8s infinite steps(3);
+}
+.minions:hover .anger {
+    display: none;
+}
+@keyframes move-licat {
+    to {
+      background-position: right 0;
+    }
+}
